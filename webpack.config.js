@@ -44,7 +44,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('./css/styles.css'),
     new HtmlPlugin({
-      title: '2GIS testTask',
+      title: 'rittest',
       template: 'index.hbs',
       filename: 'index.html',
       chunks: ['index']

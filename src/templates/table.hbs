@@ -1,0 +1,21 @@
+
+	<div class="table__row">
+		<div class="table__head">
+			<strong>Имя</strong>
+		</div>
+		<div class="table__head">
+			<strong>Фамилия</strong>
+		</div>
+		<div class="table__head">
+			<strong>Город</strong>
+		</div>
+	</div>
+
+  {{#each users}}
+	<div class="table__row">
+		<div class="table__cell">{{name}}</div>
+		<div class="table__cell">{{lastName}}</div>
+		<div class="table__cell">{{city}}</div>
+	</div>
+  {{/each}}
+
