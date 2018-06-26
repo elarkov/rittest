@@ -25,6 +25,47 @@ img {
   border: none;
 }
 
+.button {
+  display: inline-block;
+  min-width: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.42;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $colorBtn;
+  padding: 10px 17px;;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .1s ease;
+
+  &:focus, &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &::after {
+    opacity: .22;
+  }
+
+  &:hover {
+    background-color: lighten($colorBtn, 5%);
+  }
+
+  &:active {
+    background-color: darken($colorBtn, 10%);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -32,9 +73,99 @@ img {
   margin: 0;
   font-size: 16px;
   line-height: 1.75;
+  text-align: center;
   background: $bg;
   overflow: hidden;
 }
+
+.table {
+  display: table;
+  width: 960px;
+  margin: 20px auto;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  z-index: 2;
+}
+
+.table__header {
+  display: table-header-group;
+}
+
+.table__row {
+  display: table-row;
+}
+
+.table__head {
+  display: table-cell;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #949090;
+  vertical-align: middle;
+  background-color: #ddd;
+}
+
+.table__cell {
+  position: relative;
+  display: table-cell;
+  padding: 5px;
+  border: 1px solid #949090;
+  text-align: center;
+}
+
+.table__close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  opacity: 0;
+}
+
+.opened {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  transform: rotate(360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  background: #ddd;
+  text-align: center;
+  transition: .3s;
+}
+
+.btn-wrap {
+  position: relative;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.btn-wrap:hover .button__begin {
+  display: none;
+}
+
+.btn-wrap:hover .button__start {
+  display: inline-block;
+}
+
+.button__start {
+  display: none;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  height: 200px;
+  margin: auto;
+  border: 1px solid red;
+}
+
 
 
 

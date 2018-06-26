@@ -1,5 +1,5 @@
 
-	<div class="table__row">
+	<div class="table__header">
 		<div class="table__head">
 			<strong>Имя</strong>
 		</div>
@@ -12,10 +12,11 @@
 	</div>
 
   {{#each users}}
-	<div class="table__row">
-		<div class="table__cell">{{name}}</div>
-		<div class="table__cell">{{lastName}}</div>
-		<div class="table__cell">{{city}}</div>
-	</div>
+	<ul class="table__row">
+
+		<li class="table__cell">{{name}}</li>
+		<li class="table__cell">{{lastName}}</li>
+		<li class="table__cell">{{city}}</div>
+	</ul>
   {{/each}}
 
