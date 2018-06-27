@@ -1,0 +1,19 @@
+<header>
+	<div class="cell">
+		<strong>Имя</strong>
+	</div>
+	<div class="cell">
+		<strong>Фамилия</strong>
+	</div>
+	<div class="cell">
+		<strong>Город</strong>
+	</div>
+</header>
+
+{{#each users}}
+	<ul class="row">
+		<li class="cell">{{name}}</li>
+		<li class="cell">{{lastName}}</li>
+		<li class="cell">{{city}}</li>
+	</ul>
+{{/each}}

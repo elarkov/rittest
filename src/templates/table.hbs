@@ -1,22 +1,20 @@
-
-	<div class="table__header">
-		<div class="table__head">
-			<strong>Имя</strong>
-		</div>
-		<div class="table__head">
-			<strong>Фамилия</strong>
-		</div>
-		<div class="table__head">
-			<strong>Город</strong>
-		</div>
+<div class="table__header">
+	<div class="table__head">
+		<strong>Имя</strong>
 	</div>
+	<div class="table__head">
+		<strong>Фамилия</strong>
+	</div>
+	<div class="table__head">
+		<strong>Город</strong>
+	</div>
+</div>
 
-  {{#each users}}
-	<ul class="table__row">
-
-		<li class="table__cell">{{name}}</li>
-		<li class="table__cell">{{lastName}}</li>
-		<li class="table__cell">{{city}}</div>
-	</ul>
-  {{/each}}
+{{#each users}}
+<ul class="table__row">
+	<li class="table__cell">{{name}}</li>
+	<li class="table__cell">{{lastName}}</li>
+	<li class="table__cell">{{city}}</li>
+</ul>
+{{/each}}
 
